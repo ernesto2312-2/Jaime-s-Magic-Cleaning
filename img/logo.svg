@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Circular swoosh -->
+  <path d="M32 6C20.954 6 12 14.954 12 26C12 37.046 20.954 46 32 46C43.046 46 52 37.046 52 26" stroke="#0F5A47" stroke-width="5" stroke-linecap="round"/>
+  
+  <!-- House body -->
+  <path d="M22 32L32 22L42 32" stroke="#0F5A47" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M26 30V42H38V30" stroke="#0F5A47" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Window -->
+  <rect x="29.5" y="35" width="5" height="5" rx="1" stroke="#0F5A47" stroke-width="2.5"/>
+  
+  <!-- Chimney -->
+  <path d="M37 25V19H41V27" stroke="#0F5A47" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Large sparkle -->
+  <path d="M47 10L48.65 15.35L54 17L48.65 18.65L47 24L45.35 18.65L40 17L45.35 15.35L47 10Z" fill="#0F5A47"/>
+  
+  <!-- Small sparkle -->
+  <path d="M53 20L53.8 22.2L56 23L53.8 23.8L53 26L52.2 23.8L50 23L52.2 22.2L53 20Z" fill="#0F5A47"/>
+</svg>

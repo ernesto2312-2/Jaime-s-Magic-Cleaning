@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="img/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services - Jaime's Magic Cleaning</title>
-  <meta name="description" content="Choose a one-time service or set up a regular schedule. Prices are starting points. We confirm the final quote after hearing about your home.">
+  <meta name="description" content="Choose a one-time service or set up a regular schedule. Prices are honest starting points.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -17,9 +18,8 @@
     <div class="container header-inner">
       <a href="index.html" class="logo">
         <div class="logo-icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L14.59 8.41L23 12L14.59 15.59L12 24L9.41 15.59L1 12L9.41 8.41L12 0Z"/>
           </svg>
         </div>
         <div class="logo-text">
@@ -53,9 +53,8 @@
     <div class="mobile-menu-header">
       <a href="index.html" class="logo">
         <div class="logo-icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L14.59 8.41L23 12L14.59 15.59L12 24L9.41 15.59L1 12L9.41 8.41L12 0Z"/>
           </svg>
         </div>
         <div class="logo-text">
@@ -81,26 +80,46 @@
 
   <!-- Page Hero -->
   <section class="page-hero">
-    <svg class="sparkle sparkle-1" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12 0L14.59 8.41L23 12L14.59 15.59L12 24L9.41 15.59L1 12L9.41 8.41L12 0Z"/>
-    </svg>
-    <svg class="sparkle sparkle-2" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12 0L14.59 8.41L23 12L14.59 15.59L12 24L9.41 15.59L1 12L9.41 8.41L12 0Z"/>
-    </svg>
-    <svg class="sparkle sparkle-3" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12 0L14.59 8.41L23 12L14.59 15.59L12 24L9.41 15.59L1 12L9.41 8.41L12 0Z"/>
-    </svg>
+    <div class="page-hero-sparkle page-hero-sparkle-1">
+      <svg viewBox="0 0 100 100" fill="currentColor">
+        <path d="M50 0 C50 30 70 50 100 50 C70 50 50 70 50 100 C50 70 30 50 0 50 C30 50 50 30 50 0 Z"/>
+      </svg>
+    </div>
+    <div class="page-hero-sparkle page-hero-sparkle-2">
+      <svg viewBox="0 0 100 100" fill="currentColor">
+        <path d="M50 0 C50 30 70 50 100 50 C70 50 50 70 50 100 C50 70 30 50 0 50 C30 50 50 30 50 0 Z"/>
+      </svg>
+    </div>
 
     <div class="container page-hero-content">
-      <span class="eyebrow">Services</span>
+      <span class="eyebrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2L14.59 8.41L23 12L14.59 15.59L12 24L9.41 15.59L1 12L9.41 8.41L12 0Z"/>
+        </svg>
+        Services & Transparent Rates
+      </span>
       <h1>Cleaning that fits your home</h1>
-      <p>Choose a one-time service or set up a regular schedule. Prices are starting points. We confirm the final quote after hearing about your home.</p>
+      <p>Choose a one-time service or set up a regular schedule. Prices are honest starting points. We customize and confirm the final quote after hearing about your unique space.</p>
     </div>
   </section>
 
   <!-- Services Detail -->
-  <section class="section">
+  <section class="section" style="padding-top: 0;">
     <div class="container">
+     
+      <!-- Frequency Selector -->
+       <!--
+      <div style="display: flex; justify-content: flex-end; margin-bottom: var(--space-xl);">
+        <div style="display: inline-flex; padding: 0.375rem; background: var(--surface-container); border-radius: var(--radius-full); box-shadow: var(--shadow-sm);">
+          <button id="freq-regular" class="freq-btn active" style="padding: 0.5rem 1.25rem; border-radius: var(--radius-full); font-size: 0.875rem; font-weight: 600; background: var(--surface-container-lowest); color: var(--primary); box-shadow: var(--shadow-sm);">
+            Recurring (Save 15%)
+          </button>
+          <button id="freq-onetime" class="freq-btn" style="padding: 0.5rem 1.25rem; border-radius: var(--radius-full); font-size: 0.875rem; font-weight: 600; color: var(--on-surface-variant);">
+            One-Time
+          </button>
+        </div>
+      </div>-->
+
       <div class="service-detail-list">
 
         <!-- Regular Cleaning -->
@@ -113,120 +132,100 @@
               </svg>
             </div>
             <h3>Regular cleaning</h3>
-            <p>Weekly, every two weeks or monthly visits that keep the whole house at its best.</p>
-            <p class="service-detail-best"><strong>Best for:</strong> busy households and anyone who wants to stop thinking about chores.</p>
+            <p>Limpieza de mantenimiento que incluye quitar el polvo, limpiar y desinfectar baños y cocinas, aspirar y trapear pisos, y limpiar las superficies principales para mantener los espacios limpios y ordenados.</p>
+            <div class="service-detail-best">
+              <strong>Best for:</strong>
+              <span>Busy households & ongoing freshness</span>
+            </div>
           </div>
-          <div class="service-detail-includes">
-            <h4>What's included</h4>
+          <!--<div class="service-detail-includes">
+            <h4>What's included:</h4>
             <ul>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                 Dusting of all surfaces
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Vacuuming and mopping floors
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Vacuuming & mopping floors
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Kitchen counters and sink
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Kitchen counters & sink
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Bathroom scrub and sanitize
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Bathroom scrub & sanitize
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Beds made, trash emptied
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Beds made & trash emptied
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Mirrors and glass wiped
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Mirrors & glass wiped
               </li>
             </ul>
-          </div>
-          <div class="service-detail-pricing">
-            <h4>Starting at</h4>
-            <p class="price">[PRICE]</p>
-            <p class="price-note">per visit, based on home size</p>
-            <a href="contact.html" class="btn btn-primary">Request a quote</a>
-          </div>
+          </div>-->
         </div>
 
-        <!-- Deep Cleaning -->
-        <div class="service-detail-card">
+        <!-- Deep Cleaning (Featured) -->
+        <div class="service-detail-card featured">
+          <div class="service-detail-badge">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L14.59 8.41L23 12L14.59 15.59L12 24L9.41 15.59L1 12L9.41 8.41L12 0Z"/></svg>
+            Most Popular Reset
+          </div>
           <div class="service-detail-header">
-            <div class="service-card-icon">
+            <div class="service-card-icon" style="background: var(--secondary-fixed);">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M12 2L14.59 8.41L23 12L14.59 15.59L12 24L9.41 15.59L1 12L9.41 8.41L12 0Z"/>
               </svg>
             </div>
             <h3>Deep cleaning</h3>
-            <p>A thorough reset for homes that need more than a regular visit.</p>
-            <p class="service-detail-best"><strong>Best for:</strong> first visits, seasonal cleans and special occasions.</p>
+            <p>Limpieza detallada de toda la propiedad, incluyendo áreas dificiles de alcanzar, rodapiés, puertas, esquinas, ventanas, horno, ventiladores de techo, gabinetes, acumulación de grasa y suciedad, además de una limpieza profunda de baños y cocinas.</p>
+            <div class="service-detail-best">
+              <strong>Best for:</strong>
+              <span>First visits, seasons & special events</span>
+            </div>
           </div>
-          <div class="service-detail-includes">
-            <h4>What's included</h4>
+          <!--<div class="service-detail-includes">
+            <h4>What's included:</h4>
             <ul>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Everything in regular cleaning
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                <strong>Everything in regular cleaning</strong>
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Baseboards and door frames
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Baseboards & door frames
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Appliance exteriors
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Appliance exteriors scrubbed
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Grout and tile scrubbing
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Grout & tile sanitization
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Light fixtures and vents
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Light fixtures & vents dusted
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Behind and under movable furniture
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Behind & under movable furniture
               </li>
             </ul>
           </div>
           <div class="service-detail-pricing">
             <h4>Starting at</h4>
-            <p class="price">[PRICE]</p>
-            <p class="price-note">per visit, based on home size</p>
-            <a href="contact.html" class="btn btn-primary">Request a quote</a>
-          </div>
+            <p class="price price-display" data-base="210">[PRECIO]</p>
+            <p class="price-note">Comprehensive whole-home reset</p>
+            <a href="contact.html" class="btn btn-primary" style="background: var(--primary);">Request a quote</a>
+          </div>-->
         </div>
 
-        <!-- Move-in / Move-out -->
+        <!-- Post Construction -->
         <div class="service-detail-card">
           <div class="service-detail-header">
             <div class="service-card-icon">
@@ -236,60 +235,51 @@
                 <line x1="12" y1="22.08" x2="12" y2="12"></line>
               </svg>
             </div>
-            <h3>Move-in / move-out</h3>
-            <p>An empty home cleaned end to end, ready for new keys or for getting your deposit back.</p>
-            <p class="service-detail-best"><strong>Best for:</strong> tenants, landlords and new owners.</p>
+            <h3>Post-Construction</h3>
+            <p>Eliminación de polvo de construcción, residuos ligeros y suciedad después de una obra. Incluye limpieza de pisos, ventanas, puertas, zócalos, gabinetes, baños y cocina para dejar la propiedad lista para su entrega o uso..</p>
+            <div class="service-detail-best">
+              <strong>Best for:</strong>
+              <span>Tenants, landlords & new homeowners</span>
+            </div>
           </div>
-          <div class="service-detail-includes">
-            <h4>What's included</h4>
+          <!--<div class="service-detail-includes">
+            <h4>What's included:</h4>
             <ul>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Inside cabinets and drawers
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Inside cabinets & drawers
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Inside the fridge and oven
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Inside the fridge & oven
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Closets and shelves
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Closets, shelving & racks
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Windowsills and tracks
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Windowsills, tracks & blinds
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Floors throughout
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Floors stripped & sanitized
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Kitchen and bathrooms, deep cleaned
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Kitchen & bath intensive scour
               </li>
             </ul>
           </div>
           <div class="service-detail-pricing">
             <h4>Starting at</h4>
-            <p class="price">[PRICE]</p>
-            <p class="price-note">per visit, based on home size</p>
+            <p class="price price-display" data-base="280">[PRECIO]</p>
+            <p class="price-note">Full turnkey empty residence</p>
             <a href="contact.html" class="btn btn-primary">Request a quote</a>
-          </div>
+          </div>-->
         </div>
 
-        <!-- Office & Small Business -->
+        <!-- Office Cleaning -->
         <div class="service-detail-card">
           <div class="service-detail-header">
             <div class="service-card-icon">
@@ -299,145 +289,129 @@
               </svg>
             </div>
             <h3>Office & small business</h3>
-            <p>Regular cleaning for workspaces, planned around your opening hours.</p>
-            <p class="service-detail-best"><strong>Best for:</strong> small offices, studios and shops.</p>
+            <p>Limpieza y desinfección de escritorios y superficies, baños, áreas comunes y cocina; vaciado de basura, aspirado y trapeado de pisos para mantener un ambiente de trabajo limpio y profesional.
+            </p>
+            <div class="service-detail-best">
+              <strong>Best for:</strong>
+              <span>Boutique offices, studios, clinics & shops</span>
+            </div>
           </div>
-          <div class="service-detail-includes">
-            <h4>What's included</h4>
+         <!-- <div class="service-detail-includes">
+            <h4>What's included:</h4>
             <ul>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Desks and common areas
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Desks & common workstations
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Kitchen and break room
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Kitchenette & break area care
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Restrooms
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Restrooms sanitized & restocked
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Floors and entryways
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                High-traffic entryway floors
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Trash and recycling
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Trash & recyclables sorted
               </li>
               <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                Glass doors and partitions
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Glass entry partitions polished
               </li>
             </ul>
           </div>
           <div class="service-detail-pricing">
             <h4>Starting at</h4>
-            <p class="price">[PRICE]</p>
-            <p class="price-note">per visit, based on office size</p>
+            <p class="price price-display" data-base="140">[PRECIO]</p>
+            <p class="price-note">Flexible after-hours visits</p>
             <a href="contact.html" class="btn btn-primary">Request a quote</a>
           </div>
-        </div>
-
+        </div>-->
       </div>
     </div>
   </section>
 
-  <!-- Add-ons Section -->
-  <section class="section section-alt">
+
+  <!-- Features Showcase -->
+  <section class="section">
     <div class="container">
-      <div class="section-header">
-        <span class="eyebrow">Add-ons</span>
-        <h2 class="section-title">Extras for any visit</h2>
-        <p class="section-subtitle">Add any of these to a service when you request your quote.</p>
-      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div>
+            <div class="feature-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              </svg>
+            </div>
+            <h3>100% Plant-Based Formulas</h3>
+            <p>Non-toxic, allergen-free botanical concentrates that leave sparkling surfaces and neutral, breezy botanical freshness.</p>
+          </div>
+          <div class="feature-card-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            Child & Pet Safe
+          </div>
+        </div>
 
-      <div class="addons-grid">
-        <span class="addon-pill">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="12" y1="5" x2="12" y2="19"></line>
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-          </svg>
-          Inside the oven
-        </span>
-        <span class="addon-pill">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="12" y1="5" x2="12" y2="19"></line>
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-          </svg>
-          Inside the fridge
-        </span>
-        <span class="addon-pill">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="12" y1="5" x2="12" y2="19"></line>
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-          </svg>
-          Interior windows
-        </span>
-        <span class="addon-pill">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="12" y1="5" x2="12" y2="19"></line>
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-          </svg>
-          Inside cabinets
-        </span>
-        <span class="addon-pill">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="12" y1="5" x2="12" y2="19"></line>
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-          </svg>
-          Laundry and folding
-        </span>
-        <span class="addon-pill">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="12" y1="5" x2="12" y2="19"></line>
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-          </svg>
-          Pet hair treatment
-        </span>
-        <span class="addon-pill">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="12" y1="5" x2="12" y2="19"></line>
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-          </svg>
-          Balcony or patio
-        </span>
-        <span class="addon-pill">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="12" y1="5" x2="12" y2="19"></line>
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-          </svg>
-          Garage sweep
-        </span>
-      </div>
+        <div class="feature-card-image">
+          <div class="feature-card-image-bg"></div>
+          <div class="feature-card-image-content">
+            <span class="eyebrow">Hospitality Standard</span>
+            <h4>Hospital-Grade HEPA Vacuums</h4>
+            <p>Filtering 99.97% of airborne dust and pet dander.</p>
+          </div>
+        </div>
 
-      <p class="section-subtitle">Add-on prices: [PRICE LIST]</p>
+        <div class="feature-card">
+          <div>
+            <div class="feature-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3>24-Hour Reclean Guarantee</h3>
+            <p>If anything was missed or doesn't meet your spotless expectation, inform us within 24 hours and we'll revisit free of charge.</p>
+          </div>
+          <div class="feature-card-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            Zero Hassle Peace of Mind
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- CTA Section -->
   <section class="cta-section">
+    <div class="cta-sparkle cta-sparkle-1">
+      <svg viewBox="0 0 100 100" fill="currentColor">
+        <path d="M50 0 C50 30 70 50 100 50 C70 50 50 70 50 100 C50 70 30 50 0 50 C30 50 50 30 50 0 Z"/>
+      </svg>
+    </div>
+    <div class="cta-sparkle cta-sparkle-2">
+      <svg viewBox="0 0 100 100" fill="currentColor">
+        <path d="M50 0 C50 30 70 50 100 50 C70 50 50 70 50 100 C50 70 30 50 0 50 C30 50 50 30 50 0 Z"/>
+      </svg>
+    </div>
+
     <div class="container cta-content">
       <div class="cta-text">
         <h2>Not sure which service you need?</h2>
-        <p>Describe your home and we will recommend the right one, with a clear quote.</p>
+        <p>Describe your home and we will recommend the right plan with a prompt, customized, no-obligation quote.</p>
       </div>
       <div class="cta-actions">
         <a href="contact.html" class="btn btn-light btn-lg">Request a quote</a>
         <a href="tel:[PHONE]" class="cta-phone">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
           </svg>
           [PHONE NUMBER]
@@ -453,9 +427,8 @@
         <div class="footer-brand">
           <a href="index.html" class="logo">
             <div class="logo-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L14.59 8.41L23 12L14.59 15.59L12 24L9.41 15.59L1 12L9.41 8.41L12 0Z"/>
               </svg>
             </div>
             <div class="logo-text">
@@ -463,21 +436,28 @@
               <span>Magic Cleaning</span>
             </div>
           </a>
-          <p>A small local cleaning company for homes and small offices in [CITY].</p>
+          <p>Spotless care, immaculate hygiene, and peace of mind for residential sanctuaries and commercial spaces.</p>
+          <div class="footer-badges">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            Licensed & Insured
+          </div>
         </div>
 
         <div class="footer-column">
-          <h4>Explore</h4>
+          <h4>Quick Links</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="services.html">Services & Packages</a></li>
+            <li><a href="about.html">About Our Mission</a></li>
+            <li><a href="contact.html">Get In Touch</a></li>
+            <li><a href="contact.html">Request Free Estimate</a></li>
           </ul>
         </div>
 
         <div class="footer-column">
-          <h4>Contact</h4>
+          <h4>Contact Us</h4>
           <ul>
             <li><a href="tel:[PHONE]">[PHONE NUMBER]</a></li>
             <li><a href="mailto:[EMAIL]">[EMAIL ADDRESS]</a></li>
@@ -486,17 +466,25 @@
         </div>
 
         <div class="footer-column">
-          <h4>Hours</h4>
+          <h4>Operating Hours</h4>
           <ul>
-            <li><span>Mon to Fri, 8 am to 6 pm</span></li>
-            <li><span>[Saturday hours]</span></li>
+            <li><span>Monday - Friday:</span></li>
+            <li><span>[HOURS]</span></li>
+            <li><span>Saturday:</span></li>
+            <li><span>[HOURS]</span></li>
+            <li><span>Sunday:</span></li>
+            <li><span>[HOURS/EMERGENCY]</span></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2026 Jaime's Magic Cleaning. All rights reserved.</p>
-        <p>[Social links]</p>
+        <p>&copy; 2026 [COMPANY NAME]. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Satisfaction Guarantee</a>
+        </div>
       </div>
     </div>
   </footer>
