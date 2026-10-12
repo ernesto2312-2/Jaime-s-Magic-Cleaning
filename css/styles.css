@@ -108,6 +108,7 @@ body {
   line-height: 1.6;
   color: var(--on-surface);
   background-color: var(--background);
+  overflow-x: hidden;
 }
 
 img {
@@ -1011,6 +1012,42 @@ p {
   color: var(--surface-dim);
 }
 
+/* Real photo in the split section: white frame + layered shadow (same language as the hero) */
+.split-image-photo {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--radius-2xl);
+  border: 0.5rem solid var(--surface-container-lowest);
+  box-shadow:
+    0 28px 55px -15px rgba(0, 65, 50, 0.32),
+    0 10px 22px -12px rgba(0, 65, 50, 0.18),
+    0 0 0 1px rgba(0, 65, 50, 0.05);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+@media (hover: hover) {
+  .split-image-photo:hover {
+    transform: translateY(-0.375rem);
+    box-shadow:
+      0 36px 66px -18px rgba(0, 65, 50, 0.36),
+      0 14px 26px -12px rgba(0, 65, 50, 0.2),
+      0 0 0 1px rgba(0, 65, 50, 0.05);
+  }
+}
+
+.split-image-caption {
+  position: relative;
+  z-index: 1;
+  margin-top: var(--space-md);
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+  text-align: center;
+}
+
 .split-content h2 {
   margin-bottom: var(--space-lg);
 }
@@ -1268,6 +1305,8 @@ p {
   display: grid;
   gap: var(--space-2xl);
   margin-bottom: var(--space-3xl);
+  grid-template-columns: 1fr;
+  min-width: 0;
 }
 
 @media (min-width: 768px) {
@@ -2005,6 +2044,8 @@ p {
   display: grid;
   gap: var(--space-2xl);
   align-items: start;
+  grid-template-columns: 1fr;
+  min-width: 0;
 }
 
 @media (min-width: 1024px) {
@@ -2018,6 +2059,7 @@ p {
   border-radius: var(--radius-xl);
   padding: var(--space-2xl);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+  min-width: 0;
 }
 
 .contact-form-header {
@@ -2293,6 +2335,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: var(--space-lg);
+  min-width: 0;
 }
 
 .contact-info-card {
@@ -2300,6 +2343,7 @@ p {
   border-radius: var(--radius-xl);
   padding: var(--space-xl);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+  min-width: 0;
 }
 
 .contact-info-card h3 {
@@ -2330,6 +2374,7 @@ p {
   padding: var(--space-sm);
   border-radius: var(--radius-lg);
   transition: background-color var(--transition-fast);
+  min-width: 0;
 }
 
 .contact-info-item:hover {
@@ -2358,6 +2403,11 @@ p {
   height: 1.25rem;
 }
 
+.contact-info-item-text {
+  min-width: 0;
+  flex: 1;
+}
+
 .contact-info-item-text .label {
   display: block;
   font-size: 0.6875rem;
@@ -2372,6 +2422,8 @@ p {
   font-size: 1rem;
   font-weight: 600;
   color: var(--primary);
+  overflow-wrap: break-word;
+  word-break: break-all;
 }
 
 .contact-info-item-text .value-secondary {
@@ -2379,6 +2431,8 @@ p {
   font-size: 0.8125rem;
   color: var(--outline-variant);
   font-weight: 400;
+  overflow-wrap: break-word;
+  word-break: break-all;
 }
 
 .contact-map-card {
@@ -2387,6 +2441,7 @@ p {
   padding: var(--space-xl);
   overflow: hidden;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.03);
+  min-width: 0;
 }
 
 .contact-map-card h3 {
@@ -2412,19 +2467,26 @@ p {
 
 .contact-map-placeholder {
   width: 100%;
-  height: 11rem;
+  height: 15rem;
   border-radius: var(--radius-lg);
   background-color: var(--surface-container-high);
-  background-size: cover;
-  background-position: center;
   position: relative;
-  display: flex;
-  align-items: flex-end;
-  padding: var(--space-sm);
+  overflow: hidden;
   box-shadow: inset 0 0 0 1px var(--surface-container);
 }
 
+.contact-map-placeholder iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
 .contact-map-badge {
+  position: absolute;
+  bottom: var(--space-sm);
+  left: var(--space-sm);
+  z-index: 10;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -2476,6 +2538,7 @@ p {
   background-color: var(--primary);
   color: var(--on-primary);
   border-radius: var(--radius-xl);
+  min-width: 0;
   padding: var(--space-xl);
   position: relative;
   overflow: hidden;
@@ -2609,5 +2672,86 @@ p {
 
   .page-hero {
     padding: var(--space-3xl) 0 var(--space-2xl);
+  }
+
+  /* Header fixes */
+  .header-inner {
+    height: 4rem;
+  }
+
+  .logo img {
+    height: 2rem !important;
+  }
+
+  .mobile-menu .logo img {
+    height: 1.75rem !important;
+  }
+
+  /* Contact grid - ensure single column on mobile */
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* CTA fixes */
+  .cta-content {
+    gap: var(--space-lg);
+  }
+
+  .cta-actions {
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .cta-actions .btn {
+    width: 100%;
+  }
+
+  .cta-phone {
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* Footer fixes */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+
+  /* Contact sidebar cards */
+  .contact-sidebar {
+    min-width: 0;
+  }
+
+  .contact-info-card,
+  .contact-map-card,
+  .contact-guarantee-card {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .contact-info-item {
+    flex-wrap: wrap;
+  }
+
+  .contact-info-item-text {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .contact-map-placeholder {
+    height: 10rem;
+  }
+
+  .contact-guarantee-card {
+    padding: var(--space-lg);
+  }
+
+  .contact-guarantee-content {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
